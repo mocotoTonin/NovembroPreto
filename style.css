@@ -1,0 +1,194 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: rgb(244, 244, 244);
+}
+body p {
+    font-family: Jazz LET, fantasy;
+    font-size: 1.5rem;
+}
+header h1{
+    font-family: Bradley Hand, cursive;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #06235f;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Estilos gerais para as seções */
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section .texto {
+    width: 48%;
+}
+
+section .imagem {
+    width: 48%;
+}
+
+section .imagem img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o layout ímpar (texto à direita e imagem à esquerda) */
+.impar .texto {
+    order: 2;
+    text-align: left;
+    
+}
+
+.impar .imagem {
+    order: 1;
+}
+
+/* Estilos para o layout par (texto à esquerda e imagem à direita) */
+.par .texto {
+    order: 1;
+    text-align: left;
+}
+
+.par .imagem {
+    order: 2;
+}
+
+/* Rodapé */
+footer {
+    background-color: #06235f;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+nav {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    background-color: #06235f;
+}
+
+nav i {
+    font-size: 24px; /* Aumenta o tamanho do ícone */
+    color: #ffffff;     /* Define a cor */
+    cursor: pointer; /* Mostra o cursor ao passar por cima */
+}
+
+/* Seção sobre Zumbi dos Palmares */
+.zumbi {
+    display: block;
+    background-color: #f4f4f4;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(130, 130, 130, 0.1);
+
+}
+
+.zumbi img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.zumbi p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo do caça-palavras */
+.caca-palavras {
+    display: block;
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f7f6f6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.caca-palavras .grade {
+    display: grid;
+    grid-template-columns: repeat(10, 40px); 
+    grid-gap: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.caca-palavras .grade div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #06235f;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.caca-palavras .grade div.selecionado {
+    background-color: #35fd42;
+}
+
+.caca-palavras .palavras {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.caca-palavras .palavras li {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #06235f;
+}
+
+.caca-palavras #mensagem {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: rgb(29, 205, 29);
+    
+}
